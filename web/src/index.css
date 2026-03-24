@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-hatch-orange: #EE6C4D;
+  --color-hatch-peach: #F4A261;
+  --color-hatch-beige: #EBE2D9;
+  --color-hatch-charcoal: #293241;
+  --color-hatch-white: #FFFFFF;
+  --color-hatch-offwhite: #FDFCFB;
+  --font-sans: 'Instrument Sans', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-hatch-offwhite);
+    color: var(--color-hatch-charcoal);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, var(--color-hatch-orange), var(--color-hatch-peach));
+}
+
+.bg-hero-pattern {
+  background-image: radial-gradient(rgba(238, 108, 77, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
