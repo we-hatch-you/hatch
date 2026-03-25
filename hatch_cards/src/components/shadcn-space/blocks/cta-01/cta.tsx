@@ -8,7 +8,7 @@ type CTAProps = {
   className?: string;
 };
 
-const CTA = ({ className }: CTAProps) => {
+const CTA = ({ className: _className }: CTAProps) => {
   const ref = useRef(null);
 
   const bottomAnimation = {
